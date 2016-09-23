@@ -22,6 +22,7 @@ ChartRepository.prototype.proportionalize = function(){
 ChartRepository.prototype.addProportionalizeControls = function(){
     var proportionalize = document.createElement("button");
     proportionalize.setAttribute("name", "proportionalize");
+    proportionalize.setAttribute("class", "proportionalize");
     proportionalize.appendChild(document.createTextNode("Proportionalize"));
 
     proportionalize.addEventListener("click", function(){
